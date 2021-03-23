@@ -9,5 +9,47 @@ body {
   box-sizing: border-box;
   height: 100%;
   width: 100%;
-  font-size: 10px;
+  font-size: 16px;
+  font-family: "Mulish", sans-serif;
+}
+
+:root {
+  --primary-color-orange: #ff723d;
+  --primary-color-blue: #92d2d9;
+  --light-color-gray: #ececec;
+  --light-color-light-gray: #f9f9fb;
+  --white: #fff;
+  --black: #232323;
+}
+
+h1 {
+  font-size: 4rem; /*60px*/
+}
+
+h2 {
+  font-size: 2.875rem; /*46px*/
+}
+
+h3 {
+  font-size: 1.875rem; /*30px*/
+}
+
+h4 {
+  font-size: 1.5rem; /*24px*/
+}
+
+h5 {
+  font-size: 1.25rem; /*20px*/
+}
+
+h6 {
+  font-size: 1rem; /*16px*/
+}
+
+p {
+  font-size: 1.125rem; /*18px*/
+}
+
+a {
+  /* color: var(--primary-color-orange); */
 }
