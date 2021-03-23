@@ -37,9 +37,9 @@ const Promise = () => {
     return (
         <div>
             <h6>Daitool Promise</h6>
-            {PROMISE_DATA.map((promise) => {
+            {PROMISE_DATA.map((promise, i) => {
                 return (
-                    <div>
+                    <div key={i}>
                         <img src={promise.icon.image} alt="" />
                         <p>{promise.name}</p>
                         <h6>{promise.description}</h6>

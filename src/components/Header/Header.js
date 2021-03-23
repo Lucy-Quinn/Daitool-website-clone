@@ -1,14 +1,20 @@
-import React from 'react';
-import HeaderImage from './../../images/mobile/photos/header-image.png';
+import React, { useContext } from 'react';
 import './Header.css';
+import { ImageContainer, Heading, Country, Link } from './Header.styled';
+import { ThemeContext } from './../../contexts/ThemeContext';
 
 const Header = () => {
+
+    //Theme context
+    const { themes } = useContext(ThemeContext);
+
     return (
         <div>
-            <img src={HeaderImage} alt="image of tools" />
-            <h2>New Products</h2>
-            <h3>Japan</h3>
-            <a href="">Discover now</a>
+            <ImageContainer>
+                <Heading themes={themes}>New Products</Heading>
+                <Country themes={themes}>Japan</Country>
+                <Link themes={themes} href="#">Discover now</Link>
+            </ImageContainer>
         </div>
     );
 }

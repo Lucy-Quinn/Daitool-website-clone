@@ -19,9 +19,9 @@ const Brands = () => {
         <div>
 
             <h6>Our Brands</h6>
-            {BRANDS_DATA.map((brand) => {
+            {BRANDS_DATA.map((brand, i) => {
                 return (
-                    <img src={brand.logo.image} alt="" />
+                    <img src={brand.logo.image} alt="" key={i} />
                 )
             })}
         </div>

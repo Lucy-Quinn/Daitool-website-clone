@@ -37,9 +37,9 @@ const PRODUCTS_DATA = [
 const Themes = () => {
     return (
         <div>
-            {PRODUCTS_DATA.map((product) => {
+            {PRODUCTS_DATA.map((product, i) => {
                 return (
-                    <div>
+                    <div key={i}>
                         <img src={product.image.image} />
                         <h5>{product.name}</h5>
                         <h6>Subtitulo</h6>
