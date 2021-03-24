@@ -1,12 +1,13 @@
 import React from 'react';
 import MagnifyingGlass from './../../../images/mobile/icons/navbar-magnifying-glass-icon.svg';
+import { Form, Input, Image } from './SearchBar.styled';
 
 const SearchBar = () => {
     return (
-        <form action="#">
-            <input type="text" />
-            <img src={MagnifyingGlass} alt="Magnifying glass" />
-        </form>
+        <Form action="#">
+            <Input type="text" />
+            <Image src={MagnifyingGlass} alt="Magnifying glass" />
+        </Form>
     );
 }
 
