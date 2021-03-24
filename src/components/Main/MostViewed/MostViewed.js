@@ -1,14 +1,20 @@
-import React from 'react';
-import MostViewedImage from './../../../images/mobile/photos/most-viewed-category.png';
+import React, { useContext } from 'react';
+import { ThemeContext } from './../../../contexts/ThemeContext';
+import { ImageContainer, MostViewedContainer, TopHeading, MiddleHeading, Description } from './MostViewed.styled';
 
 const MostViewed = () => {
+
+    //Theme context
+    const { themes } = useContext(ThemeContext);
+
     return (
-        <div>
-            <img src={MostViewedImage} alt="image of tools" style={{ width: '100%' }} />
-            <h6>Most Viewed Category</h6>
-            <h4>Highlighted Product Category</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
-        </div>
+        <MostViewedContainer>
+            <ImageContainer>
+                <TopHeading themes={themes}>MOST VIEWED CATEGORY</TopHeading>
+                <MiddleHeading themes={themes}>Highlighted Product Category</MiddleHeading>
+                <Description themes={themes}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</Description>
+            </ImageContainer>
+        </MostViewedContainer>
     );
 }
 

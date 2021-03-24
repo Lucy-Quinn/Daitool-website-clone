@@ -13,14 +13,14 @@ body {
   font-family: "Mulish", sans-serif;
 }
 
-:root {
+/* :root {
   --primary-color-orange: #ff723d;
   --primary-color-blue: #92d2d9;
   --light-color-gray: #ececec;
   --light-color-light-gray: #f9f9fb;
   --white: #fff;
   --black: #232323;
-}
+} */
 
 h1 {
   font-size: 4rem; /*60px*/
