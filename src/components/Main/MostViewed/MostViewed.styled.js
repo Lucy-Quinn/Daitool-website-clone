@@ -26,7 +26,7 @@ const TopHeading = styled.h6`
 
 const MiddleHeading = styled.h4`
     font-weight: 700;
-    color: #000000;
+    color: ${({ themes }) => themes.black};
     margin: 10px 0 0 0;
 
 `
