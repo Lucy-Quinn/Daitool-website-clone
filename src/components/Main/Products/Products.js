@@ -1,11 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Safety from './../../../images/mobile/photos/safety.png';
 import Janitorial from './../../../images/mobile/photos/janitorial.png';
 import Tools from './../../../images/mobile/photos/tools.png';
 import Woodworking from './../../../images/mobile/photos/woodworking.png';
 import Gardening from './../../../images/mobile/photos/gardening.png';
 import OfficeSupplies from './../../../images/mobile/photos/office-supplies.png';
-import { prettyDOM } from '@testing-library/dom';
+import { ImageContainer, ImageContent, TopHeading, MiddleHeading } from './Products.styled';
+import { ThemeContext } from './../../../contexts/ThemeContext';
 
 const PRODUCTS_DATA = [
     {
@@ -35,16 +36,21 @@ const PRODUCTS_DATA = [
 ]
 
 const Themes = () => {
+
+    //Theme context
+    const { themes } = useContext(ThemeContext);
+
     return (
         <div>
             {PRODUCTS_DATA.map((product, i) => {
                 return (
                     <div key={i}>
-                        <img src={product.image.image} />
-                        <h5>{product.name}</h5>
-                        <h6>Subtitulo</h6>
-                        {/* <h6>Most Viewed Category</h6>
-            <h4>Highlighted Product Category</h4> */}
+                        <ImageContainer image={product.image.image}>
+                            <ImageContent>
+                                <TopHeading themes={themes}>{product.name}</TopHeading>
+                                <MiddleHeading themes={themes}>Subtitulo</MiddleHeading>
+                            </ImageContent>
+                        </ImageContainer>
                     </div>
                 )
             })}
