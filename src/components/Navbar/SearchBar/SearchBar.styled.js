@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const Form = styled.form`
-display: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     padding: 0 0 20px 0;
@@ -9,6 +9,7 @@ display: flex;
 
 const Input = styled.input`
     width: 86%;
+    height: 44px;
     padding: 15px 0;
     border-radius: 21px;
     border: none;

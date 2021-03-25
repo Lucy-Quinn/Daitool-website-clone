@@ -32,6 +32,7 @@ const Link = styled.a`
     color: ${({ themes }) => themes.primaryColorOrange};
     font-size: 18px;
     font-weight: 600;
+    text-decoration: underline;
 `
 
 export {

@@ -8,13 +8,10 @@ const Logo = styled.img`
 const Description = styled.p`
     font-size: 15px;
     color: ${({ themes }) => themes.blackButton};
-    width: 336px;
-    margin: 0 0 40px 20px;
+    width: 306px;
+    margin: 5px 0 40px 20px;
     letter-spacing: 0.2px;
 `
-
-
-
 
 export {
     Logo,

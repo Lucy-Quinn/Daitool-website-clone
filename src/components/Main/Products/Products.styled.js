@@ -23,9 +23,8 @@ const TopHeading = styled.h5`
     color: ${({ themes }) => themes.white};
     font-size: 22px;
     font-weight: 700;
-    margin: 10% 0 0 0;
+    margin: 10% 0 1% 0;
     line-height: 32px;
-
 `
 
 const MiddleHeading = styled.h6`

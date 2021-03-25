@@ -25,6 +25,7 @@ const DaitoolPromise = styled.div`
     flex-direction: column;
     align-items: center;
     width: 50%;
+    margin-bottom: 5px;
 `
 
 const Image = styled.img`

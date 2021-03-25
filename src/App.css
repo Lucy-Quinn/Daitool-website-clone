@@ -1,7 +1,3 @@
-/* .App {
-  text-align: center;
-} */
-
 html,
 body {
   margin: 0;
@@ -12,15 +8,6 @@ body {
   font-size: 16px;
   font-family: "Mulish", sans-serif !important;
 }
-
-/* :root {
-  --primary-color-orange: #ff723d;
-  --primary-color-blue: #92d2d9;
-  --light-color-gray: #ececec;
-  --light-color-light-gray: #f9f9fb;
-  --white: #fff;
-  --black: #232323;
-} */
 
 h1 {
   font-size: 4rem; /*60px*/
@@ -48,10 +35,6 @@ h6 {
 
 p {
   font-size: 1.125rem; /*18px*/
-}
-
-a {
-  /* color: var(--primary-color-orange); */
 }
 
 .carousel-control-next-icon,

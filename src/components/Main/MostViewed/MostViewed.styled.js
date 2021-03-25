@@ -4,8 +4,8 @@ import MostViewedImage from './../../../images/mobile/photos/most-viewed-categor
 const ImageContainer = styled.div`
     background: linear-gradient(90.67deg, #F1F1F3 43.94%, rgba(240, 240, 242, 0) 99.4%), url(${MostViewedImage});
     background-repeat: no-repeat;
-    background-position: center; /* Center the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
+    background-position: center; 
+    background-size: cover; 
     height: 215px;
     display: flex;
     padding: 15px 15px 15px 20px;
@@ -22,6 +22,7 @@ const TopHeading = styled.h6`
     color: ${({ themes }) => themes.primaryColorOrange};
     font-weight: 800;
     margin: 18px 0 0 0;
+    letter-spacing: 0.2px;
 `
 
 const MiddleHeading = styled.h4`

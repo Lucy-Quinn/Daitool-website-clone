@@ -9,7 +9,6 @@ const Text = styled.h6`
     font-weight: 400;
     margin: 20px 0 0 20px;
     padding: 0 0 20px 0;
-    letter-spacing: 0.2px;
 `
 
 export {

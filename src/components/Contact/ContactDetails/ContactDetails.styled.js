@@ -16,10 +16,15 @@ const Button = styled.button`
     background-color: ${({ themes }) => themes.white};
     color: ${({ themes }) => themes.primaryColorBlue};
     font-size: 15px;
-    border-radius: 7px;
+    border-radius: 10px;
     padding: 20px 41px;
     font-weight: 400;
-    letter-spacing: 0.2px;
+    letter-spacing: 0.05em;
+    width: 159.62px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 `
 
 const ContactDetailsContainer = styled.div`
