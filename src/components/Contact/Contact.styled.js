@@ -13,19 +13,10 @@ const Description = styled.p`
     letter-spacing: 0.2px;
 `
 
-const Image = styled.img`
-    width: 54px;
-`
 
-const SocialMediaContainer = styled.div`
-    display: flex;
-    justify-content: space-around;
-`
 
 
 export {
     Logo,
     Description,
-    Image,
-    SocialMediaContainer
 }

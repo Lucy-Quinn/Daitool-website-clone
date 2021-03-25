@@ -27,7 +27,7 @@ const SubscribeContainer = styled.div`
     background-position: center; /* Center the image */
     background-size: cover; /* Resize the background image to cover the entire container */
     height: 236px;
-    width: 100%;
+    /* width: 100%; */
     display: flex;
     flex-direction: column;
     justify-content: center;

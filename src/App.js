@@ -6,6 +6,7 @@ import Navbar from './components/Navbar/Navbar';
 import TopProducts from './components/TopProducts/TopProducts';
 import Newsletter from './components/Newsletter/Newsletter';
 import Contact from './components/Contact/Contact';
+import Footer from './components/Footer/Footer';
 import ThemeContextProvider from './contexts/ThemeContext';
 
 
@@ -19,6 +20,7 @@ function App() {
         <TopProducts />
         <Newsletter />
         <Contact />
+        <Footer />
       </ThemeContextProvider>
     </div>
   );

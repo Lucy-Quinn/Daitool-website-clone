@@ -8,33 +8,29 @@ const ImageContainer = styled.div`
     background-size: cover; /* Resize the background image to cover the entire container */
     height: 421px;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
 `
 
 const Heading = styled.h2`
-    margin: 0;
+    margin: 0 20px 0 0;
     color: ${({ themes }) => themes.white};
     font-size: 40px;
-    position: relative;
-    top: 58%;
-    left: 24%;
     font-weight: 700;
 `
 const Country = styled.h3`
+    margin: 0 20px 0 0;
     color: ${({ themes }) => themes.white};
     font-size: 36px;
-    position: relative;
-    top: 49%;
-    left: 0 auto;
-    left: 70%;
     font-weight: 200;
 `
 
 const Link = styled.a`
+    margin: 10px 20px 50px 0;
     color: ${({ themes }) => themes.primaryColorOrange};
     font-size: 18px;
-    position: relative;
-    top: 42%;
-    left: 65%;
     font-weight: 600;
 `
 

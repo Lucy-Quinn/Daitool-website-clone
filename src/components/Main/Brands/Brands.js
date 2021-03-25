@@ -29,8 +29,8 @@ const Brands = () => {
             <BrandContainer>
                 {BRANDS_DATA.map((brand, i) => {
                     return (
-                        <ImageContainer>
-                            <Image src={brand.logo.image} alt="" key={i} />
+                        <ImageContainer key={i} >
+                            <Image src={brand.logo.image} alt="" />
                         </ImageContainer>
                     )
                 })}
