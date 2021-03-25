@@ -2,8 +2,7 @@ import styled from 'styled-components';
 
 const Heading = styled.h6`
  color: ${({ themes }) => themes.mediumGray};
-    /* margin-left: 20px; */
-    margin: 32px auto 32px 20px;
+    margin: 32px auto 20px 20px;
     font-size: 18px;
     font-weight: 600;
 `
@@ -11,23 +10,21 @@ const Heading = styled.h6`
 const Description = styled.h6`
     font-size: 14px;
     color: ${({ themes }) => themes.mediumGray};
-    margin: 0;
+    margin: 5px 0 0 0;
     font-weight: 400;
 `
 
 const PromiseContainer = styled.div`
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    height: 400px;
+    justify-content: space-around;
 `
 
 const DaitoolPromise = styled.div`
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    height: 150px;
-    width: 30%;
+    align-items: center;
+    width: 50%;
 `
 
 const Image = styled.img`

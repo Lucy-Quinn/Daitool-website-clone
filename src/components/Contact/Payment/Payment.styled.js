@@ -7,5 +7,5 @@ const PaymentContainer = styled.div`
 `
 
 export {
-    PaymentContainer,
+    PaymentContainer
 }
