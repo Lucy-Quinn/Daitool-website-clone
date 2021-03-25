@@ -4,7 +4,7 @@ const ThemeContextProvider = (props) => {
 
     const [themes, setThemes] = useState({
         primaryColorOrange: '#ff723d', primaryColorBlue: '#92d2d9', mediumGray: '#C4C4C4',
-        lightColorGray: '#ececec', lightColorLightGray: '#f9f9fb', white: '#fff', black: '#000000', blackButton: '#232323', darkGray: '#52575C', footerColor: '#5C5C5C'
+        lightColorGray: '#ececec', lightGray: '#8D8D8D', white: '#fff', black: '#000000', blackButton: '#232323', darkGray: '#52575C', footerColor: '#5C5C5C'
     });
 
     return (

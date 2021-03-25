@@ -7,6 +7,7 @@ import TopProducts from './components/TopProducts/TopProducts';
 import Newsletter from './components/Newsletter/Newsletter';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
+import Blogs from './components/Blogs/Blogs';
 import ThemeContextProvider from './contexts/ThemeContext';
 
 
@@ -18,6 +19,7 @@ function App() {
         <Header />
         <Main />
         <TopProducts />
+        <Blogs />
         <Newsletter />
         <Contact />
         <Footer />

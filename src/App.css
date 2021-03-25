@@ -10,7 +10,7 @@ body {
   height: 100%;
   width: 100%;
   font-size: 16px;
-  font-family: "Mulish", sans-serif;
+  font-family: "Mulish", sans-serif !important;
 }
 
 /* :root {
@@ -52,4 +52,9 @@ p {
 
 a {
   /* color: var(--primary-color-orange); */
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  display: none !important;
 }
