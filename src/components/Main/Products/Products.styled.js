@@ -3,11 +3,13 @@ import styled from 'styled-components';
 const ProductsContainer = styled.div`
     display: flex;
     flex-wrap: wrap;
-    padding: 0 150px 50px;
     justify-content: space-between;
+    @media(min-width: 1920px){
+        padding: 0 150px 50px;
+    }
 `
 
-const ImageContainer = styled.div`
+const ImageContainerMobile = styled.div`
     background-image: linear-gradient(to bottom, rgba(255,255,255, 0) 0%, rgba(0,0,0, 1) 124%), url(${({ image }) => image});
     background-repeat: no-repeat;
     background-position: center; /* Center the image */
@@ -18,6 +20,24 @@ const ImageContainer = styled.div`
     margin-bottom: 15px;
     border-radius: 10px;
     @media(min-width: 1920px){
+        display: none;
+        width: 512px;
+        height: 174px;
+        margin: 0 0 34px;
+    }
+`
+
+const ImageContainerDesktop = styled.div`
+    display: none;
+    
+    @media(min-width: 1920px){
+        display: flex;
+        background-image: linear-gradient(to left, rgba(255,255,255, 0) 0%, rgba(0,0,0, 1) 124%), url(${({ image }) => image});
+    background-repeat: no-repeat;
+    background-position: center; /* Center the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    /* margin: 0 auto; */
+    border-radius: 10px;
         width: 512px;
         height: 174px;
         margin: 0 0 34px;
@@ -32,6 +52,7 @@ const ImageContent = styled.div`
     @media(min-width: 1920px){
         align-items: flex-start;
         padding: 0 0 0 10px;
+        margin-left: 3.65%;
     }
 `
 
@@ -51,7 +72,8 @@ const MiddleHeading = styled.h6`
 
 export {
     ProductsContainer,
-    ImageContainer,
+    ImageContainerMobile,
+    ImageContainerDesktop,
     ImageContent,
     TopHeading,
     MiddleHeading

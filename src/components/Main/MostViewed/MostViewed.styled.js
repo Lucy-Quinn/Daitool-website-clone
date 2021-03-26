@@ -22,7 +22,9 @@ const ImageContainer = styled.div`
 `
 
 const MostViewedContainer = styled.div`
-    padding: 50px 150px;
+    @media(min-width: 1920px){
+        padding: 50px 150px;
+    }
 `
 
 const TopHeading = styled.h6`

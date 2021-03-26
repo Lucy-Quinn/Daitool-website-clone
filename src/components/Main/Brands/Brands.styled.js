@@ -17,22 +17,41 @@ const BrandContainer = styled.div`
     align-items: center;
     width: 77%;
     margin: 0 auto;
+    @media(min-width: 1920px){
+        margin: 0;
+        width: inherit;
+    }
 `
 
 const Image = styled.img`
     margin: 0 0 30px 0;
+    @media(min-width: 1920px){
+        margin: 0;
+    }
 `
 
 const ImageContainer = styled.div`
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-    /* margin: 0 auto; */
+  
 `
+
+const ArrowLeft = styled.img`
+    display: none;
+    @media(min-width: 1920px){
+        display: block;
+    }
+`
+
+const ArrowRight = styled.img`
+  display: none;
+    @media(min-width: 1920px){
+        display: block;
+    }`
 
 export {
     Heading,
     BrandContainer,
     Image,
-    ImageContainer
+    ImageContainer,
+    ArrowLeft,
+    ArrowRight
 }

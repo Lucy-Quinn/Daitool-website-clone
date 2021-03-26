@@ -5,8 +5,11 @@ import Olfa from './../../../images/mobile/icons/brands-olfa.svg';
 import Anex from './../../../images/mobile/icons/brands-anex.svg';
 import Mitutoyo from './../../../images/mobile/icons/brands-mitutoyo.svg';
 import Tone from './../../../images/mobile/icons/brands-tone.svg';
-import { Heading, BrandContainer, Image, ImageContainer } from './Brands.styled';
+import { Heading, BrandContainer, Image, ImageContainer, ArrowLeft, ArrowRight } from './Brands.styled';
 import { ThemeContext } from './../../../contexts/ThemeContext';
+import ArrowLeftIcon from './../../../images/desktop/icons/brands-arrow-left.svg';
+import ArrowRightIcon from './../../../images/desktop/icons/brands-arrow-right.svg';
+
 
 const BRANDS_DATA = [
     {
@@ -47,9 +50,10 @@ const Brands = () => {
     const { themes } = useContext(ThemeContext);
 
     return (
-        <div>
+        <div style={{ marginRight: '8%', marginLeft: '8%' }}>
             <Heading themes={themes}>Our Brands</Heading>
             <BrandContainer>
+                <ArrowLeft src={ArrowLeftIcon} />
                 {BRANDS_DATA.map((brand) => {
                     return (
                         <ImageContainer key={brand.id} >
@@ -57,6 +61,8 @@ const Brands = () => {
                         </ImageContainer>
                     )
                 })}
+                <ArrowRight src={ArrowRightIcon} />
+
             </BrandContainer>
         </div>
     );
