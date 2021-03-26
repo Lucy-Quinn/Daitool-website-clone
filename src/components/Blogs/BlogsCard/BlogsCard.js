@@ -8,14 +8,17 @@ const CAROUSEL_MOCKED_DATA = [
     {
         title: "Blog post publication 1",
         text: "Author ",
+        id: '1'
     },
     {
         title: "Blog post publication 1",
         text: "Author ",
+        id: '2'
     },
     {
         title: "Blog post publication 1",
         text: "Author ",
+        id: '3'
     },
 ]
 
@@ -29,7 +32,7 @@ const BlogsCard = () => {
                 {
                     CAROUSEL_MOCKED_DATA.map((data) => {
                         return (
-                            <Carousel.Item>
+                            <Carousel.Item key={data.id}>
                                 <Card style={{ width: '21rem', margin: '0 auto 30px auto', height: '252px', borderRadius: '10px', border: 'none' }}>
                                     <img src={BlogPost} />
                                     <Card.Body style={{ margin: '0 0 0 -21px' }}>

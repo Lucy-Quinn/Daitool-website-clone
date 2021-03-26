@@ -7,20 +7,40 @@ import Facebook from './../../../images/mobile/icons/social-facebook.svg';
 import Instagram from './../../../images/mobile/icons/social-instagram.svg';
 
 const SOCIAL_MEDIA_DATA = [
-    { icon: { image: Youtube } },
-    { icon: { image: Linkedin } },
-    { icon: { image: Twitter } },
-    { icon: { image: Facebook } },
-    { icon: { image: Instagram } },
+    {
+        icon:
+            { image: Youtube },
+        id: 1
+    },
+    {
+        icon:
+            { image: Linkedin },
+        id: 2
+    },
+    {
+        icon:
+            { image: Twitter },
+        id: 3
+    },
+    {
+        icon:
+            { image: Facebook },
+        id: 4
+    },
+    {
+        icon:
+            { image: Instagram },
+        id: 5
+    },
 ]
 
 const SocialMedia = () => {
     return (
         <div>
             <SocialMediaContainer>
-                {SOCIAL_MEDIA_DATA.map((social, i) => {
+                {SOCIAL_MEDIA_DATA.map((social) => {
                     return (
-                        <Image src={social.icon.image} alt="" key={i} />
+                        <Image src={social.icon.image} alt="" key={social.id} />
                     )
                 })}
             </SocialMediaContainer>

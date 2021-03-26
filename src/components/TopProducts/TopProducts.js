@@ -10,19 +10,22 @@ const CAROUSEL_MOCKED_DATA = [
         title: "Product",
         text: "Brief description",
         discounted: "$300.98",
-        price: "$350.99"
+        price: "$350.99",
+        id: '1'
     },
     {
         title: "Product",
         text: "Brief description",
         discounted: "$300.98",
-        price: "$350.99"
+        price: "$350.99",
+        id: '2'
     },
     {
         title: "Product",
         text: "Brief description",
         discounted: "$300.98",
-        price: "$350.99"
+        price: "$350.99",
+        id: '3'
     }
 ]
 
@@ -42,7 +45,7 @@ const TopProducts = () => {
                 {
                     CAROUSEL_MOCKED_DATA.map((data) => {
                         return (
-                            <Carousel.Item>
+                            <Carousel.Item key={data.id}>
                                 <Card style={{ width: '200px', margin: '0 auto 30px auto', height: '300px', borderRadius: '10px', boxShadow: '0px 5px 6px rgba(0, 0, 0, 0.06)', border: 'none' }}>
                                     <TopProductCard />
                                     <Card.Body>

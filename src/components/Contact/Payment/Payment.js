@@ -7,21 +7,33 @@ import { PaymentContainer } from './Payment.styled';
 
 
 const PAYMENT_DATA = [
-    { logo: { image: Vasi } },
-    { logo: { image: Masterkard } },
-    { logo: { image: Peypol } },
-    { logo: { image: Bitkoin } }
+    {
+        logo: { image: Vasi },
+        id: 1
+    },
+    {
+        logo: { image: Masterkard },
+        id: 2
+    },
+    {
+        logo: { image: Peypol },
+        id: 3
+    },
+    {
+        logo: { image: Bitkoin },
+        id: 4
+    }
 ]
 
 
 const Payment = () => {
     return (
         <PaymentContainer>
-            {PAYMENT_DATA.map((payment, i) => {
+            {PAYMENT_DATA.map((payment => {
                 return (
-                    <img key={i} src={payment.logo.image} />
+                    <img key={payment.id} src={payment.logo.image} />
                 )
-            })}
+            }))}
         </PaymentContainer>
     );
 }

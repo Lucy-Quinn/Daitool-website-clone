@@ -9,7 +9,6 @@ const LINKS_DATA =
         'Shop',
         'Brands',
         'Wholesale']
-
     ,
     customerArea: ['My Account',
         'Deliveries',

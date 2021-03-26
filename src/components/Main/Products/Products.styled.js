@@ -1,5 +1,12 @@
 import styled from 'styled-components';
 
+const ProductsContainer = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 150px 50px;
+    justify-content: space-between;
+`
+
 const ImageContainer = styled.div`
     background-image: linear-gradient(to bottom, rgba(255,255,255, 0) 0%, rgba(0,0,0, 1) 124%), url(${({ image }) => image});
     background-repeat: no-repeat;
@@ -10,6 +17,11 @@ const ImageContainer = styled.div`
     margin: 0 auto;
     margin-bottom: 15px;
     border-radius: 10px;
+    @media(min-width: 1920px){
+        width: 512px;
+        height: 174px;
+        margin: 0 0 34px;
+    }
 `
 
 const ImageContent = styled.div`
@@ -17,6 +29,10 @@ const ImageContent = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    @media(min-width: 1920px){
+        align-items: flex-start;
+        padding: 0 0 0 10px;
+    }
 `
 
 const TopHeading = styled.h5`
@@ -33,8 +49,8 @@ const MiddleHeading = styled.h6`
     font-weight: 400;
 `
 
-
 export {
+    ProductsContainer,
     ImageContainer,
     ImageContent,
     TopHeading,

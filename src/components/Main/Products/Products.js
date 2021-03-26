@@ -5,57 +5,63 @@ import Tools from './../../../images/mobile/photos/tools.png';
 import Woodworking from './../../../images/mobile/photos/woodworking.png';
 import Gardening from './../../../images/mobile/photos/gardening.png';
 import OfficeSupplies from './../../../images/mobile/photos/office-supplies.png';
-import { ImageContainer, ImageContent, TopHeading, MiddleHeading } from './Products.styled';
+import { ProductsContainer, ImageContainer, ImageContent, TopHeading, MiddleHeading } from './Products.styled';
 import { ThemeContext } from './../../../contexts/ThemeContext';
 
 const PRODUCTS_DATA = [
     {
         name: 'Safety',
-        image: { image: Safety }
+        image: { image: Safety },
+        id: '1'
+
     },
     {
         name: 'Janitorial',
-        image: { image: Janitorial }
+        image: { image: Janitorial },
+        id: '2'
+
     },
     {
         name: 'Tools',
-        image: { image: Tools }
+        image: { image: Tools },
+        id: '3'
     },
     {
         name: 'Woodworking',
-        image: { image: Woodworking }
+        image: { image: Woodworking },
+        id: '4'
     },
     {
         name: 'Gardening',
-        image: { image: Gardening }
+        image: { image: Gardening },
+        id: '5'
     },
     {
         name: 'Office Supplies',
-        image: { image: OfficeSupplies }
+        image: { image: OfficeSupplies },
+        id: '6'
     }
 ]
 
-const Themes = () => {
+const Products = () => {
 
     //Theme context
     const { themes } = useContext(ThemeContext);
 
     return (
-        <div>
-            {PRODUCTS_DATA.map((product, i) => {
+        <ProductsContainer>
+            {PRODUCTS_DATA.map((product) => {
                 return (
-                    <div key={i}>
-                        <ImageContainer image={product.image.image}>
-                            <ImageContent>
-                                <TopHeading themes={themes}>{product.name}</TopHeading>
-                                <MiddleHeading themes={themes}>Subtitulo</MiddleHeading>
-                            </ImageContent>
-                        </ImageContainer>
-                    </div>
+                    <ImageContainer image={product.image.image} key={product.id}>
+                        <ImageContent>
+                            <TopHeading themes={themes}>{product.name}</TopHeading>
+                            <MiddleHeading themes={themes}>Subtitulo</MiddleHeading>
+                        </ImageContent>
+                    </ImageContainer>
                 )
             })}
-        </div>
+        </ProductsContainer>
     );
 }
 
-export default Themes;
+export default Products;
