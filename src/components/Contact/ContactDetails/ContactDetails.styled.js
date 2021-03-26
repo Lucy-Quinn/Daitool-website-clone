@@ -30,11 +30,55 @@ const Button = styled.button`
 const ContactDetailsContainer = styled.div`
     margin-left: 20px;
 `
+const ContactTextGroup = styled.div`
+    display: none;
+    @media(min-width: 1920px){
+        display: flex;
+        flex-direction: column;
+    }
+`
+
+const Heading = styled.h5`
+        font-size: 20px;
+        font-weight: 700;
+        @media(min-width: 1920px){
+            font-size: 20px;
+            margin: 50px 0 30px 0;
+        }
+`
+
+const Description = styled.h6`
+    font-size: 16px;
+    font-weight: 400;
+`
+
+const ContactDetailsGroup = styled.div`
+    @media(min-width: 1920px){
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 400px;
+    }
+    
+`
+
+
+const ContactNumberGroup = styled.div`
+    @media(min-width: 1920px){
+        display: flex;
+        flex-direction: column;
+    }
+`
 
 
 export {
     Questions,
     Telephone,
     Button,
-    ContactDetailsContainer
+    ContactDetailsContainer,
+    ContactTextGroup,
+    Heading,
+    Description,
+    ContactDetailsGroup,
+    ContactNumberGroup
 }
