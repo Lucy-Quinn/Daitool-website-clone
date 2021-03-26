@@ -2,10 +2,12 @@ import styled from 'styled-components';
 
 const Heading = styled.h6`
     color: ${({ themes }) => themes.mediumGray};
-    /* margin-left: 20px; */
     margin: 32px auto 32px 20px;
     font-size: 18px;
     font-weight: 600;
+    @media(min-width: 1920px){
+        display: none;
+    }
 `
 
 const BrandContainer = styled.div`

@@ -48,7 +48,6 @@ const Brands = () => {
 
     return (
         <div>
-
             <Heading themes={themes}>Our Brands</Heading>
             <BrandContainer>
                 {BRANDS_DATA.map((brand) => {
